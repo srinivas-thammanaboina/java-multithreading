@@ -24,7 +24,7 @@ class Thread2 extends Thread {
 }
 
 
-public class ThreadApp {
+public class ThreadApp { 
 
 	public static void main(String[] args) {
 
