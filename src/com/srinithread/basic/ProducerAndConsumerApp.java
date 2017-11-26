@@ -29,7 +29,7 @@ class ProducerAndConsumer {
 					System.out.println("adding item "+value);
 					list.add(value);
 					++value;
-					lock.notify();
+					lock.notify(); // this will notify only after list reaches threashold
 				}
 			Thread.sleep(300);
 		   }
@@ -47,7 +47,7 @@ class ProducerAndConsumer {
 					lock.wait();
 				}else{
 					System.out.println("removing item "+list.remove(--value));
-					lock.notify();
+					lock.notify(); // this will notify only after removing all items
 				}
 			Thread.sleep(300);
 		   }
