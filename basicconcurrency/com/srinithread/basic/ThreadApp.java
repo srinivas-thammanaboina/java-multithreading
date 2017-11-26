@@ -8,13 +8,7 @@ class Thread1 extends Thread {
 
 		for(int i=0; i<=10;++i){
 			System.out.println("Runner 1 -> "+i);
-			//pausing thread for some time
-			try{
-				Thread.sleep(100);
-			}catch(InterruptedException e ){
-				e.printStackTrace();
 			}
-		}
 	}
 }
 
@@ -25,13 +19,7 @@ class Thread2 extends Thread {
 
 		for(int i=0; i<=10;++i){
 			System.out.println("Runner 2 -> "+i);
-			//pausing thread for some time
-			try{
-				Thread.sleep(100);
-			}catch(InterruptedException e ){
-				e.printStackTrace();
 			}
-		}
 	}
 }
 
@@ -46,6 +34,7 @@ public class ThreadApp {
 		t1.start();
 		t2.start();
 		
+		//this statement will get executed before both threads finishes
 		System.out.println("threads finished");
 	}
 
