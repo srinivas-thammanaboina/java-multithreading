@@ -1,4 +1,4 @@
-package com.srinithread.concurencybasic;
+package com.srinithread.basic;
 
 
 class Runner1 implements Runnable {
