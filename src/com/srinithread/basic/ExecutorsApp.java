@@ -51,11 +51,13 @@ public class ExecutorsApp {
 			executorService.submit(new ExecutorDriver());
 		}
 		
+		executorService.shutdown();
 		ExecutorService executorService1 =  Executors.newCachedThreadPool();
 		
 		for(int i=0; i<8;++i){
 			executorService1.submit(new ExecutorDriver());
 		}
+		executorService1.shutdown();
 	}
 
 }
