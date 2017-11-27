@@ -9,15 +9,21 @@ import java.util.concurrent.locks.ReentrantLock;
  * @author srini
  *
  *	Reentrant lock
- *		- it has the same approach as the "sunchronozed approach"
+ *		- it has the same approach as the "synchronized approach"
  *		- it has some additional features
  *				new ReentrantLock (boolean fairnessParameter){
- *							~ fairnessParameter : if it is set to true - > the longest waiting thread will get the lock
+ *							~ fairnessParameter : if it is set to true - > the longest waiting thread will get the lock  
+ *													prevents thread starvation
  *												   if it is false -> there is no access order
+ *					Synchronized blocks are unfair by default
+ *		- we can check whether given lock is held or not with reentrant locks
+ *		- we can get the list of threads that are waiting for a given lock with reentrant locks
+ *		- synchronized blocks are no need to have try catch finally block
  *
  *	IMPORTANT: 
  *  	we have to use try catch block when doing critical section that may throw exception
- *  	We can call unlock() in the finally block !!!								
+ *  	We can call unlock() in the finally block !!!	
+ *  							
  */
 public class ReentrantLockApp {
 
