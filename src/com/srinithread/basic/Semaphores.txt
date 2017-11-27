@@ -1,0 +1,24 @@
+Semaphores: 
+	-> Semaphores are variables or ADT that are used to control the access to a common resource
+	-> important in OS
+	-> Semaphore - is record of how many units of a particular resources are available -- wait until the resource becomes available
+	-> counting semaphore: allows an arbitrary resource count
+	-> Binary semaphores: semaphores which are restricted to the values 0 and 1
+	-> Semaphores tracks only how many resources are free. it does not track which resources are free.
+	-> The semaphore count may serve as a useful trigger for a number of different actions
+	
+Mutexes:
+	-> A mutex is essentially same thing as binary semaphore
+	-> while a binary semaphore may be used as a mutex, a mutext is a more specific use-case
+	
+	- mutexes have a  concept of an owner. Only the process that locked the mutex supposed to be unlock
+	- mutexes may provide priority inversion safety. if the mutex knows its current owner, it is possible to promote the priority 
+	  of the owner whenever a higher-priority task starts waiting on the mutex
+	- mutex can provide deletion safery
+	
+atomicity:
+      atomicity is unbreakability, i.e. an uninterrupted operation. If two users issue a print command, each print should go in single attempt.
+      If the printer driver is sending parts of data from two users, the printout will not be as expected.
+      Hence, the printer driver must send the print command as unbreakable operation from one application at a time 
+     (in other words synchronize the access to printer).
+	  
