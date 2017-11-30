@@ -1,4 +1,4 @@
-package com.srinithread.basic;
+package threadbasics;
 
 
 class Thread1 extends Thread {

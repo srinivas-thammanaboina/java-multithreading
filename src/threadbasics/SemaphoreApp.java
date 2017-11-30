@@ -1,4 +1,4 @@
-package com.srinithread.basic;
+package threadbasics;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

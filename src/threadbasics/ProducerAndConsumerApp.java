@@ -1,4 +1,4 @@
-package com.srinithread.basic;
+package threadbasics;
 
 import java.util.ArrayList;
 import java.util.List;

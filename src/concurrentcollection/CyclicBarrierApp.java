@@ -1,4 +1,4 @@
-package com.srinithread.concurrentcollection;
+package concurrentcollection;
 
 import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;

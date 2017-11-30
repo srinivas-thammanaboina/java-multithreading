@@ -1,4 +1,4 @@
-package com.srinithread.basic;
+package threadbasics;
 
 /**
  * the volatile keyword in Java is used as an indicator to Java compiler and Thread that do not cache value of this variable

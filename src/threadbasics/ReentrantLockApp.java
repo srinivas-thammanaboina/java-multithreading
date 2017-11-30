@@ -1,4 +1,4 @@
-package com.srinithread.basic;
+package threadbasics;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

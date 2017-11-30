@@ -1,4 +1,4 @@
-package com.srinithread.concurrentcollection;
+package concurrentcollection;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.DelayQueue;
