@@ -3,6 +3,20 @@ package concurrentcollection;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
+/**
+ * 
+ * @author srini
+ * 
+ * ConcurrentHashMap is undoubtedly most popular collection class introduced in Java 5 and most of us are already using it. 
+ * ConcurrentHashMap provides a concurrent alternative of Hashtable or Synchronized Map classes with aim to support
+ *  higher level of concurrency by implementing fined grained locking. Multiple reader can access the Map concurrently  
+ *  while a portion of Map gets locked for write operation depends upon concurrency level of Map. 
+ *  ConcurrentHashMap provides better scalability than there synchronized counter part.
+ *   Iterator of ConcurrentHashMap are fail-safe iterators which doesn't throw ConcurrencModificationException thus eliminates 
+ *   another requirement of locking during iteration which result in further scalability and performance
+
+ *
+ */
 public class ConcurrentMapsApp {
 
 	public static void main(String[] args) {
